@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Kieran Galbraith">
+  <meta name="description" content="Geosoftware Task 4">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+  <title>Geosoftware1 Task 4</title>
+  </head>
+
+  <body>
+    <div id="main">
+    <div class="left" id="leafletMap"></div>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin="">
+    </script>
+    <script type="text/javascript" src="https://tiles.unwiredmaps.com/js/leaflet-unwired.js">
+    </script>
+    <script src="main.js"></script>
+    <script src="pois.js"></script>
+    <script src="point.js"></script>
+
+    <h2>Bushaltestellen in Münster</h2>
+    <textarea rows="10" id="userGeoJSON"></textarea><br>
+    <button type="button" name="busStop" onclick="leafletHaltestellen()">Zeig mir die Haltestellen!!</button>
+    <button class="button" type="button" onclick="getLocation()">Wo bin ich?? (Bitte hier zuerst klicken)</button>
+    </div>
+    <div id="bus">
+  </body>
+  </html>
